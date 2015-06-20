@@ -1,8 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace />
-  <MonoDevelop.Ide.Workbench ActiveDocument="..\SaccadeUnity\Assets\SaccadeurMove.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Respawn.cs">
     <Files>
-      <File FileName="..\SaccadeUnity\Assets\SaccadeurMove.cs" Line="21" Column="43" />
+      <File FileName="Assets\scripts\Respawn.cs" Line="18" Column="48" />
+      <File FileName="Assets\scripts\RightStickLook.cs" Line="16" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
