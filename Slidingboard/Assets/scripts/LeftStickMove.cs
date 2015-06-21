@@ -16,11 +16,18 @@ public class LeftStickMove : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-		float turn = Input.GetAxis("LeftHorizontal");
-		float throttle = Input.GetAxis("LeftVertical") * Invert;
+		float turn = Input.GetAxis("LeftHorizontal") * Sensitivity;
+		float throttle = Input.GetAxis("LeftVertical") * Invert * Sensitivity;
 		Rigidbody rb = GetComponent<Rigidbody>();
 		Vector3 currentVelocity = rb.velocity;
-		/* TODO: everything, basically. This currently does nothing.
+
+		Quaternion targetRotation = transform.localRotation;
+		targetRotation *= Quaternion.Euler (0f, turn, 0f);
+		Vector3 newVelocity = targetRotation * currentVelocity;
+
+		rb.velocity = newVelocity;
+
+		/* TODO: everything, basically.
 		 * 		 We want it to rotate both Mirabella and the velocity vector.
 
 		/* Old movement scheme preserved for historical curiosity
