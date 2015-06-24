@@ -5,8 +5,8 @@ public class LeftStickMove : MonoBehaviour {
 
 	public float Sensitivity = 1f;
 	public float Falloff     = 10f;
-	public float MaxSpeed	 = 10f;
-	public float Invert		 = 1f;
+	public float MaxSpeed	 = 100f;
+	public float Invert		 = -1f;
 
 	// Use this for initialization
 	void Start () {
@@ -17,15 +17,18 @@ public class LeftStickMove : MonoBehaviour {
 	void Update () {
 
 		float turn = Input.GetAxis("LeftHorizontal") * Sensitivity;
-		float throttle = Input.GetAxis("LeftVertical") * Invert * Sensitivity;
 		Rigidbody rb = GetComponent<Rigidbody>();
-		Vector3 currentVelocity = rb.velocity;
 
 		Quaternion targetRotation = transform.localRotation;
 		targetRotation *= Quaternion.Euler (0f, turn, 0f);
-		Vector3 newVelocity = targetRotation * currentVelocity;
 
-		rb.velocity = newVelocity;
+		transform.localRotation = targetRotation;
+
+		rb.velocity = Quaternion.Euler (0f, turn, 0f) * rb.velocity;
+
+		if(Input.GetButtonDown("push")) {
+			rb.AddForce(transform.localRotation * new Vector3(0f, 0f, MaxSpeed * Invert));
+		}
 
 		/* TODO: everything, basically.
 		 * 		 We want it to rotate both Mirabella and the velocity vector.

@@ -16,6 +16,7 @@ public class Respawn : MonoBehaviour {
 			transform.position = spawnpoint.position;
 			GetComponent<Rigidbody>().velocity = new Vector3( 0f, 0f, 0f );
 			transform.eulerAngles = new Vector3( 0f, 270f, 0f );
+			transform.GetChild(0).eulerAngles = new Vector3(0f, 270f, 0f);
 		}
 	}
 }
