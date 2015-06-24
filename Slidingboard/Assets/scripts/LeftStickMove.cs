@@ -29,27 +29,5 @@ public class LeftStickMove : MonoBehaviour {
 		if(Input.GetButtonDown("push")) {
 			rb.AddForce(transform.localRotation * new Vector3(0f, 0f, MaxSpeed * Invert));
 		}
-
-		/* TODO: everything, basically.
-		 * 		 We want it to rotate both Mirabella and the velocity vector.
-
-		/* Old movement scheme preserved for historical curiosity
-
-		float x = Input.GetAxis("LeftHorizontal");
-		float y = Input.GetAxis("LeftVertical");
-		float rad = Mathf.Atan2(y, x);
-		float deg = Mathf.Rad2Deg(rad);
-		
-		Vector3 inputDir = new Vector3(Input.GetAxis("LeftHorizontal"),0f,-Input.GetAxis("LeftVertical"));
-		Rigidbody rb = GetComponent<Rigidbody>();
-		float currentSpeed = rb.velocity.magnitude;
-		
-		/* TODO: it should be easier to change direction
-		 *       same-direction accelleration should fall off quickly
-		 *       most of your speed should come from boosts (maybe?)
-
-		Quaternion rotateInputDir = transform.localRotation;
-		rb.AddForce( rotateInputDir * inputDir * Sensitivity );
-		*/
 	}
 }
