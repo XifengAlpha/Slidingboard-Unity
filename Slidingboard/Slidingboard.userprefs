@@ -1,9 +1,10 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\LeftStickMove.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\scripts\Respawn.cs">
     <Files>
       <File FileName="Assets\scripts\LeftStickMove.cs" Line="1" Column="1" />
-      <File FileName="Assets\scripts\RightStickLook.cs" Line="8" Column="33" />
+      <File FileName="Assets\scripts\RightStickLook.cs" Line="10" Column="26" />
+      <File FileName="Assets\scripts\Respawn.cs" Line="19" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

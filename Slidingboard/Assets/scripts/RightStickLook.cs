@@ -7,7 +7,7 @@ public class RightStickLook : MonoBehaviour {
 	public float Sensitivity = 1f;
 	public float Falloff     = 10f;
 	public float MaxSpeed	 = 100f;
-	public float Invert		 = -1f;
+	public float Invert		 = 1f;
 
 
 	// Use this for initialization
