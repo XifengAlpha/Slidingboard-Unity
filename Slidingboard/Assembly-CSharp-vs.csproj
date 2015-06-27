@@ -51,6 +51,7 @@
      <Compile Include="Assets\scripts\LeftStickMove.cs" />
      <Compile Include="Assets\scripts\Respawn.cs" />
      <Compile Include="Assets\scripts\RightStickLook.cs" />
+     <Compile Include="Assets\scripts\Teleporter.cs" />
      <Compile Include="Assets\scripts\xlookabout.cs" />
      <Compile Include="Assets\scripts\ylookabout.cs" />
  <Reference Include="UnityEngine.UI">
