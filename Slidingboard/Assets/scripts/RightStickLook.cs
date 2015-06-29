@@ -48,8 +48,5 @@ public class RightStickLook : MonoBehaviour {
 		
 		rb.velocity = Quaternion.Euler (0f, turn, 0f) * rb.velocity;
 		
-		if(Input.GetButtonDown("push")) {
-			rb.AddForce(transform.localRotation * new Vector3(0f, 0f, MaxSpeed * Invert));
-		}
 	}
 }

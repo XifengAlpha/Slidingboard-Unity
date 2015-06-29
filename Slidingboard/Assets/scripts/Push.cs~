@@ -1,0 +1,17 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class Push : MonoBehaviour {
+
+	public float Sensitivity;
+	public float xInvert = -1;
+	public float zInvert = -1;
+
+	// Update is called once per frame
+	void Update () {
+		float xPush = Input.GetAxis("LeftHorizontal") * Sensitivity * xInvert;
+		float zPush = Input.GetAxis("LeftVertical") * Sensitivity * zInvert;
+		Rigidbody rb = GetComponent<Rigidbody>();
+		rb.AddForce( transform.localRotation * new Vector3( xPush, 0f, zPush ) );
+	}
+}
