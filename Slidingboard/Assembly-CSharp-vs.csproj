@@ -52,6 +52,8 @@
      <Compile Include="Assets\scripts\Push.cs" />
      <Compile Include="Assets\scripts\Respawn.cs" />
      <Compile Include="Assets\scripts\RightStickLook.cs" />
+     <Compile Include="Assets\scripts\TeleportEnter.cs" />
+     <Compile Include="Assets\scripts\TeleportLeave.cs" />
      <Compile Include="Assets\scripts\Teleporter.cs" />
      <Compile Include="Assets\scripts\xlookabout.cs" />
      <Compile Include="Assets\scripts\ylookabout.cs" />
