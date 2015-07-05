@@ -75,10 +75,10 @@ We still need a lot of the essentials: entrances and exits that link up other sc
 ## Style Hints
 
 
-**Entrance/Exits** should be constructed to appear as seamless as possible. Fade-to-white or fade-to-black tunnels like the ones used in surf_lt_omnific are appropriate, false-walls like those used in surf_beginner are not. Every level should have five entrance/exits: one primary entrance, two primary goals, and two side-paths.
+**Entrance/Exits** Every level should have five entrance/exits: one primary entrance, two primary goals, and two side-paths.
 
 
-**Named vistas** are a design element that will play a prominent role in Slidingboard. They should be somewhat difficult to reach, and they should offer access to new areas, or provide an informative vantage point. Names should be abstract, suggestive, and friendly.
+**Named vistas** are a design element that will play a prominent role in Slidingboard. They should be somewhat difficult to reach, and they should offer access to new areas, or provide an informative vantage point. Names should be abstract and friendly.
 
 
 **Models** should tend toward the abstract. Currently everything is rectilinear blocks of flat color, new assets should at the very least be compatible with this. It's ok to suggest elements from the real world, but imitating them should be avoided. In all cases, interactivity should be the primary motive.
@@ -90,7 +90,6 @@ For example, a vertical element with branching platforms, colored green, might b
 **Textures** should likewise be abstract. Keep them simple and geometric, and make sure they look good at distance. They should be compatible with the untextured, solid-color materials that are already in place.
 
 
-**Music** should be loopable, but fairly long. It should generally not be aggressive. Each track should in some way complement the environment in which it plays. Tracks may be re-used to thematically link different areas that are conceptually linked in some other way, similar to how the different kinds of caves in HyperRogue have the same music. I want people to feel fairly unrestricted with the music, but if you want something more definite to follow, aim for ambient, trip-hop, chillstep, or post-rock. If you really want something to imitate, Sigur Ros is the project lead's favorite band.
-
+**Music** should be loopable, but fairly long. It should generally not be aggressive. Each track should in some way complement the environment in which it plays. Tracks may be re-used to thematically link different areas that are conceptually linked in some other way, similar to how the different kinds of caves in HyperRogue have the same music.
 
 Music should reflect the games emphasis on smoothness. Sectional transitions are appropriate, but should be gradual and not jarring.
